@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: sre-demo
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: sre-demo
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: sre-demo
-        image: 641017921846.dkr.ecr.ap-south-1.amazonaws.com/testeks:latest
+        image: 641017921846.dkr.ecr.ap-south-1.amazonaws.com/testeks:latestv1
         ports:
         - containerPort: 3000
         readinessProbe:
