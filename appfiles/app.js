@@ -11,7 +11,7 @@ setTimeout(() => {
 }, 10000); // 10 seconds delay
 
 app.get("/", (req, res) => {
-  res.send("Hello from ArgoCD test app 🚀");
+  res.send("Hello from ArgoCD test app v1 🚀");
 });
 
 app.get("/health", (req, res) => {
